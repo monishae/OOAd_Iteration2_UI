@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Boardgame</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1024">
+      <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://demo.omnigon.com/christian_bovine/showtime/js/jquery-jvectormap-1.1.1.min.js"></script>
+<script src="http://demo.omnigon.com/christian_bovine/showtime/js/jquery.jvectormap-us.js"></script>
+    <script type="text/javascript">
+//        GAMEPREFIX = "Ticket To Ride";
+    </script>
+<!--   <script type="text/javascript" src="tickettoride.js"></script>-->
+
+   <!-- <link href="../core/core.css" rel="stylesheet" media="all"/>-->
+    <link href="boardgame.css" rel="stylesheet" media="all"/>
+<!--    <link href="fonts/stylesheet.css" rel="stylesheet" media="all"/>-->
+</head>
+<body class=gamebody>
+
+<!--<div id="game" class="game step-0">-->
+<!--
+    <div id="animation">
+
+    </div>
+-->
+
+<div class="container">
+
+<nav>
+  <ul>
+    <li><a href="#"><img border="0" alt="trainCard" src="white_card.png" width="100" height="50"></a></li>
+    <li><a href="#"><img border="0" alt="trainCard" src="red_card.png" width="100" height="50"></a></li>
+    <li><a href="#"><img border="0" alt="trainCard" src="green_card.png" width="100" height="50"></a></li>
+    <li><a href="#"><img border="0" alt="trainCard" src="orange_card.png" width="100" height="50"></a></li>
+    <li><a href="#"><img border="0" alt="deck" src="deck.png" width="40" height="40"></a></li>
+  </ul>
+    <hr>
+    
+    <ul>
+    <li><a href="#"><img border="0" alt="trainCard" src="dest_card_1.png" width="100" height="50"></a></li>
+    <li><a href="#"><img border="0" alt="trainCard" src="dest_card_2.png" width="100" height="50"></a></li>
+          <li><table style="width:10%">
+  <tr>
+    <th>Player</th>
+    <th>Score</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>80</td>
+  </tr>
+              </table></li>
+  </ul>
+    
+</nav>
+
+<article>
+<div id="boardmap"></div>
+    <script>
+    $(function () {
+    $('#boardmap').vectorMap({
+        map: 'us_aea_en',
+        zoomOnScroll: false,
+        hoverOpacity: 0.0,
+        markerStyle: {
+            initial: {
+                fill: '#F8E23B',
+                stroke: '#383f47'
+            }
+        },
+        markers: [{
+            latLng: [41.50, -87.37],
+            name: 'Chicago'
+        }, {
+            latLng: [32.46, -96.46],
+            name: 'Dallas'
+        }, {
+            latLng: [36.10, -115.12],
+            name: 'Las Vegas'
+        }, {
+            latLng: [34.3, -118.15],
+            name: 'Los Angeles'
+        }, {
+            latLng: [40.43, -74.00],
+            name: 'New York City'
+        }]
+    });
+});
+</script>
+</article>
+
+<footer><ul id="handCards">
+  
+
+  <li><a href="#"><img border="0" alt="trainCard" src="white_card.png" width="120" height="60"></a></li>
+    <li><a href="#"><img border="0" alt="trainCard" src="white_card.png" width="120" height="60"></a></li>
+    <li><a href="#"><img border="0" alt="trainCard" src="red_card.png" width="120" height="60"></a></li>
+    <li><a href="#"><img border="0" alt="trainCard" src="green_card.png" width="120" height="60"></a></li>
+    <li><a href="#"><img border="0" alt="trainCard" src="orange_card.png" width="120" height="60"></a></li>
+    
+</ul></footer>
+
+</div>
+    
+   
+
+    
+
+<!--</div>-->
+
+</body>
+</html>
+
+
